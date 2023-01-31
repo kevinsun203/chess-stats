@@ -10,8 +10,6 @@ app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname + "/public")));
-
 // Upon receiving a request for player data
 app.post('/api/get-player-data', async (req, res) => {
 
