@@ -1,0 +1,20 @@
+.archive-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.tc-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}

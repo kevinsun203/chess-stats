@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #312e2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.headerText {
+  padding: 0.5rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.searchText {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.form label {
+  color: white;
+}
+
+.form input {
+  min-height: 48px;
+  border-radius: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.error {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.error h1 {
+  color: red;
+}
+
+.error button {
+  min-height: 30px;
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+#dark {
+  background-color: #373535;
+}
+
+#dark #dark-text {
+  color: white;
+}
+
+#dark-shadow {
+  background-color: rgba(0,0,0,0.75);
+}
+
+#light-shadow {
+  background-color: rgba(0,0,0,0.3);
+}
+.loading {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loading h1 {
+  color: black;
+}
+
+footer {
+  background-color: #312e2b;
+  color: white;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

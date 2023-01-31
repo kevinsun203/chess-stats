@@ -1,0 +1,38 @@
+.play-info {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem 2rem 3.5rem;
+    padding: 1.5rem;
+    gap: 0.75rem;
+}
+
+.time-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.tc-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.ratingTable {
+    border-collapse: collapse;
+}
+
+.tableRow {
+    border-bottom: 1px solid black;
+}
+
+.tableRow td {
+    padding: 0.5rem;
+}
+
+.tableRow th {
+    padding: 0.5rem;
+}

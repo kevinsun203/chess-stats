@@ -1,0 +1,16 @@
+.club-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 90vh;
+}
+
+.time-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}

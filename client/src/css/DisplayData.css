@@ -1,0 +1,161 @@
+.basic-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 1.5rem;
+    background-color: lightgrey;
+    display: flex;
+    gap: 1.5rem;
+    min-width: 45vw;
+    border-radius: 1rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.stats-container {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    width: calc(100vw - 45vw - 1.5rem - 1.5rem - 2rem - 2rem);
+}
+
+.pfp {
+    border: 1px solid rgb(29, 28, 28);
+}
+
+.profile-info h1 {
+    padding-bottom: 0.5rem;
+}
+
+.profile-info p {
+    padding-top: 0.3rem;
+}
+
+.play-info {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem 2rem 3.5rem;
+    padding: 1.5rem;
+    gap: 0.75rem;
+}
+
+.time-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.tc-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.blitz {
+    height: 1.5rem;
+    width: 2.5rem;
+}
+
+.rapid {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.bullet {
+    height: 1.5rem;
+    width: 2.5rem;
+}
+
+.tc-header .board {
+    height: 1.8rem;
+    width: 1.9rem;
+}
+
+.tc-header .clubs {
+    height: 2rem;
+    width: 2rem;
+}
+
+.clubs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 0.75rem;
+    max-width: 15vw;
+}
+
+.update {
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+}
+
+#archive {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+#games {
+    min-width: 50vw;
+}
+
+#game:hover {
+    cursor: pointer;
+}
+
+.gameTable {
+    border-collapse: collapse;
+}
+
+.tableRow {
+    border-bottom: 1px solid black;
+}
+.tableRow {
+    height: 60px;
+}
+.tableRow td.time-class{
+    width: 15%
+}
+
+.tableRow td.result{
+    width: 15%
+}
+
+.tableRow td.opening{
+    width: 60%
+}
+
+.tableRow td.date{
+    width: 10%
+}
+
+th {
+    text-align: left;
+}
+
+.openings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2rem 3rem 2rem
+}
+
+.compare {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem 3rem 1rem;
+}
