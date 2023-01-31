@@ -6,6 +6,21 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+const whitelist = ['https://chess-stats-hvca.onrender.com/'];
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed'));
+        }
+    },
+    credentials: true,
+    optionsSuccessStatus: 200
+}
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
