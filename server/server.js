@@ -7,10 +7,10 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const whitelist = ['https://chess-stats-hvca.onrender.com/'];
+const whitelist = ['https://chess-stats-hvca.onrender.com/', 'http://localhost:3000'];
 const corsOptions = {
     origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1) {
+        if (whitelist.indexOf(origin) !== -1 || !origin) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed'));
