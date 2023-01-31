@@ -5,6 +5,7 @@ import bullet from "../images/bullet.png";
 import board from "../images/board.png";
 import club from "../images/club.png";
 import play from "../images/play.png";
+import be from "../api.js";
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState, useCallback } from 'react';
 import { ThemeContext } from '../App';
@@ -97,7 +98,7 @@ const DisplayData = ({ userData }) => {
             },
             body: playerId
         }
-        await fetch('/api/update-player-games', callOptions);
+        await fetch(`${be}/api/update-player-games`, callOptions);
         sessionStorage.removeItem(`user-data-${playerId}`);
 
         // Timeout must be set so that the node server can restart in time to listen for the subsequent
@@ -121,7 +122,7 @@ const DisplayData = ({ userData }) => {
             body: JSON.stringify(sentData)
         };
 
-        const data = await fetch('/api/get-player-batch', callOptions);
+        const data = await fetch(`${be}/api/get-player-batch`, callOptions);
         const games = await data.json();
         setGames(games.archive);
         setAllGames(games.done);
@@ -213,7 +214,7 @@ const DisplayData = ({ userData }) => {
                 body: playerId
             }
             try {
-                const response = await fetch('/api/get-player-games', callOptions);
+                const response = await fetch(`${be}/api/get-player-games`, callOptions);
                 const games = await response.json();
                 setGames(games.archive);
                 setAllGames(games.done);

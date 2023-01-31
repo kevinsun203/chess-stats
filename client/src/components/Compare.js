@@ -1,6 +1,7 @@
 import { useEffect, useContext, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ThemeContext } from '../App';
+import be from '../api.js';
 import '../css/Compare.css';
 
 const Compare = () => {
@@ -25,7 +26,7 @@ const Compare = () => {
                 body: playerId
             }
             try {
-                const response = await fetch('/api/get-player-data', callOptions);
+                const response = await fetch(`${be}/api/get-player-data`, callOptions);
                 const formatted = await response.json();
                 if (id === 2) {
                     setPlayer2(formatted);

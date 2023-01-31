@@ -8,12 +8,12 @@ import Unknown from './components/Unknown';
 import Loading from './components/Loading';
 import Footer from './components/Footer';
 import Compare from './components/Compare';
+import be from './api.js';
 
 // Context for dark/light mode
 export const ThemeContext = createContext("light");
 
 function App() {
-
   const [search, setSearch] = useState("");
 
   const [userData, setUserData] = useState("");
@@ -38,7 +38,7 @@ function App() {
     }
 
     try {
-      const response = await fetch('/api/get-player-data', callOptions);
+      const response = await fetch(`${be}/api/get-player-data`, callOptions);
       const formatted = await response.json();
       console.log(formatted);
       setUserData(formatted);
